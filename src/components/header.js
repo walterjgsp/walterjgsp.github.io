@@ -3,30 +3,33 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <header>
+    <div className="ui attached stackable menu">
+      <div className="ui container">
+        <a className="item">
+          <Link to="/">
+            <i className="home icon"></i> Home
+          </Link>
+        </a>
+        <a className="item">
+          <i className="grid layout icon"></i> Browse
+        </a>
+        <a className="item">
+          <i className="mail icon"></i> Messages
+        </a>
+        <div className="ui simple dropdown item">
+          More
+          <i className="dropdown icon"></i>
+          <div className="menu">
+            <a className="item"><i className="edit icon"></i> Edit Profile</a>
+            <a className="item"><i className="globe icon"></i> Choose Language</a>
+            <a className="item"><i className="settings icon"></i> Account Settings</a>
+          </div>
+        </div>
+        <div className="right item">
+          <div className="ui input"><input type="text" placeholder="Search..."/></div>
+        </div>
+      </div>
     </div>
   </header>
 )

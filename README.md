@@ -8,6 +8,25 @@
   Gatsby's default starter
 </h1>
 
+
+## Third parties
+
+If you wanna use the Semantic UI as a css framework, read the <https://semantic-ui.com/introduction/getting-started.html> guide but probably you need to install the gulp with the command:
+
+```sh
+npm install -g gulp
+```
+
+To install in the local repository and build the framework:
+
+```sh
+npm install semantic-ui --save
+cd semantic/
+gulp build
+```
+
+This link will guide you how to configure Semantic UI with gatsby <https://edmcman.github.io/blog/2018-12-31--theming-semantic-ui-react-in-gatsby-js/>
+
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
