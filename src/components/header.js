@@ -6,28 +6,23 @@ const Header = ({ siteTitle }) => (
   <header>
     <div className="ui attached stackable menu">
       <div className="ui container">
-        <a className="item">
-          <Link to="/">
+        <Link
+          to="/"
+          className="item">
             <i className="home icon"></i> Home
-          </Link>
-        </a>
-        <a className="item">
-          <i className="grid layout icon"></i> Browse
-        </a>
-        <a className="item">
-          <i className="mail icon"></i> Messages
-        </a>
-        <div className="ui simple dropdown item">
-          More
-          <i className="dropdown icon"></i>
-          <div className="menu">
-            <a className="item"><i className="edit icon"></i> Edit Profile</a>
-            <a className="item"><i className="globe icon"></i> Choose Language</a>
-            <a className="item"><i className="settings icon"></i> Account Settings</a>
-          </div>
-        </div>
+        </Link>
+        
         <div className="right item">
-          <div className="ui input"><input type="text" placeholder="Search..."/></div>
+          <a
+            href="https://github.com/walterjgsp"
+            className="item">
+              <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/walterjgsp/"
+            className="item">
+              <i class="fab fa-linkedin fa-2x"></i>
+          </a>
         </div>
       </div>
     </div>

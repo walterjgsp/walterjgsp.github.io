@@ -6,4 +6,5 @@
 
 // You can delete this file if you're not using it
 import "semantic-ui-less/semantic.less";
-import "./src/styles/css/base.css"
+import "./src/styles/css/base.css";
+import "./src/styles/css/fontawesome.min.css";
