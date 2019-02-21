@@ -4,24 +4,24 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div className="ui attached stackable menu">
+    <div className="ui inverted attached  menu">
       <div className="ui container">
         <Link
           to="/"
           className="item">
             <i className="home icon"></i> Home
         </Link>
-        
-        <div className="right item">
+
+        <div className="right icon menu">
           <a
             href="https://github.com/walterjgsp"
             className="item">
-              <i class="fab fa-github fa-2x"></i>
+              <i class="fab fa-github fa-1x"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/walterjgsp/"
             className="item">
-              <i class="fab fa-linkedin fa-2x"></i>
+              <i class="fab fa-linkedin fa-1x"></i>
           </a>
         </div>
       </div>
