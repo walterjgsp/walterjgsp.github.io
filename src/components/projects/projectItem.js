@@ -2,20 +2,24 @@ import React from 'react'
 
 export default function ProjectItem(props){
 
-  const {title,description,link} = props.project
+  const {title,description,link,year} = props.project
   return(
-    <div className="card">
-      <div className="content">
-        <div className="header">{title}</div>
-        <div className="description">
-          {description}
+      <a href={link}
+        className="ui grey card raised link">
+        <div className="content">
+          <div className="header">{title}</div>
+          <div className="description">
+            {description}
+          </div>
         </div>
-      </div>
-      <a
-        href = {link}
-        className="ui bottom attached button">
-        <span><i className="fab fa-github fa-1x"></i> Link</span>
+        <div class="extra content">
+          <div class="left floated author">
+            <i className="fab fa-github fa-1x"></i>
+          </div>
+          <span class="right floated">
+            {year}
+          </span>
+        </div>
       </a>
-    </div>
   )
 }

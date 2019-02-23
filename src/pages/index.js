@@ -37,8 +37,12 @@ export default class IndexPage extends Component{
           <div className="main">
             <img className="ui medium centered circular image" src={this.state.avatar_url}/>
             <h2 className="ui center aligned header">
-              Walter José Gonçalves da Silva Pinto
+              <div class="content">
+                  Walter José Gonçalves da Silva Pinto
+                <div class="sub header">  Software Engineer</div>
+              </div>
             </h2>
+
 
             <h3 className="ui header">
               Projects

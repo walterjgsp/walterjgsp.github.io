@@ -13,6 +13,7 @@ query{
           title
           link
           description
+          year
         }
       }
     }
@@ -28,7 +29,7 @@ export default function ProjectList() {
       render={ data => {
         const projects = data.allMarkdownRemark.edges
         return(
-          <div className="ui cards">
+          <div className="ui cards three stackable">
             {projects.map( (project,i) =>{
               return(
                 <ProjectItem
