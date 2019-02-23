@@ -16,12 +16,12 @@ const Header = ({ siteTitle }) => (
           <a
             href="https://github.com/walterjgsp"
             className="item">
-              <i class="fab fa-github fa-1x"></i>
+              <i className="fab fa-github fa-1x"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/walterjgsp/"
             className="item">
-              <i class="fab fa-linkedin fa-1x"></i>
+              <i className="fab fa-linkedin fa-1x"></i>
           </a>
         </div>
       </div>
