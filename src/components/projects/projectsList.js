@@ -5,7 +5,7 @@ import ProjectItem from './projectItem'
 
 const projectsQuery = graphql`
 query{
-  allMarkdownRemark{
+  allMarkdownRemark (sort: { order: DESC, fields: [frontmatter___date] }){
     edges{
       node{
         html

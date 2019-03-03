@@ -12,11 +12,11 @@ export default function ProjectItem(props){
             {description}
           </div>
         </div>
-        <div class="extra content">
-          <div class="left floated author">
+        <div className="extra content">
+          <div className="left floated author">
             <i className="fab fa-github fa-1x"></i>
           </div>
-          <span class="right floated">
+          <span className="right floated">
             {year}
           </span>
         </div>
