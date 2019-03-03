@@ -32,7 +32,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && gh-pages -d public -b master",
+    "preDeploy": "gatsby build --prefix-paths",
+    "deploy": "npm run preDeploy && gh-pages -d public -b master",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
