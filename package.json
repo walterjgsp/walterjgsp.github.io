@@ -3,7 +3,7 @@
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Walter J G S Pinto <walterjgsp@gmail.com>",
   "dependencies": {
     "axios": "^0.18.0",
     "gatsby": "^2.1.4",
@@ -33,7 +33,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "preDeploy": "gatsby build --prefix-paths",
-    "deploy": "npm run preDeploy && gh-pages -d public -b master",
+    "deploy": "npm run preDeploy && gh-pages -d public -b master -r \"https://${GH_TOKEN}@${GH_REF}\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
