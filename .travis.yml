@@ -15,7 +15,7 @@ deploy:
     branch: dev
 before_script:
   - "npm i -g gatsby"
-  - "npm i"
+  - "npm i --unsafe-perm=true"
 script:
   - "npm run test"
 after_success:
